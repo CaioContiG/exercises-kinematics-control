@@ -1,7 +1,7 @@
 # exercises-kinematics-control
-Simulation of simple exercises in kinematics and control.
+MatLab Simulation of simple exercises in kinematics and control.
 
-## RRP - Robotic Leg
+## RRP Robotic Manipulator
 A robotic leg simplified to a RRP manipulator. The file rrp_FK_IK.m contains the forward and inverse kinematics calculations for a RRP manipulator, as shown in the figure below. The code plots the result given joint values [q1, q2, q3] (FK) or [xc,yc,zc] end-point position (IK). It also plots the workspace.
 
 ![RRP-illustration](https://github.com/CaioContiG/exercises-robotics-dynamics-control/assets/41450841/b58cbd83-c3e9-4b93-b1dd-855d98fae958)
