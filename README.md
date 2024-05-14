@@ -13,9 +13,9 @@ Forward and inverse kinematics of a closed-chain system, slider crank linkage (1
 
 
 ## Pendulum Free-Fall
-Simlating a simple free fall of a pendulum, without damping and with string length equals to one. The file pendulum_free_fall.m computes the free fall using Euler's method and ODE45 to integrate for comparison. It shows the animation as the figure below for Euler's method and plot both Euler and ODE45 theta results over time.
+Simlating a simple free fall of a pendulum, without damping and with string length equals to one. The file pendulum_free_fall.m computes the free fall using Euler's method and ODE45 to integrate for comparison. It shows the animation as the figure below for Euler's method and plot both Euler and ODE45 theta results over time. The file pendulum_FF_RK does tha same, but it uses fourth order Runge-Kutta to compare with Euler's method, it doesn't plot animation.
 
 ![pend-free-fall](https://github.com/CaioContiG/exercises-robotics-dynamics-control/assets/41450841/2c1dfa00-0a79-47e9-b0cb-0c45189c9750)
 
 ## Pendulum PD Control
-Perform swing-up of the pendulum, with damping and l = 0.5 with a PD controller. The file pendulum_pd.m control the pendulum with a proportional-derivative controller with no restrictions on the maximum torque. It shows the animation and plot the theta and tau over time.
+Perform swing-up of the pendulum, with damping and l = 0.5 with a PD controller. It uses Euler's method to integrate. The file pendulum_pd.m control the pendulum with a proportional-derivative controller with no restrictions on the maximum torque. It shows the animation and plot the theta and tau over time.
