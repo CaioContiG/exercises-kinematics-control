@@ -1,5 +1,5 @@
 # exercises-robotics-dynamics-control
-Simulation and Solution of simple exercises in Robotics Dynamics and Control
+Simulation of simple exercises in kinematics and control.
 
 ## RRP - Robotic Leg
 A robotic leg simplified to a RRP manipulator. The file rrp_FK_IK.m contains the forward and inverse kinematics calculations for a RRP manipulator, as shown in the figure below. The code plots the result given joint values [q1, q2, q3] (FK) or [xc,yc,zc] end-point position. It also plots the workspace.
@@ -17,5 +17,9 @@ Simlating a simple free fall of a pendulum, without damping and with string leng
 
 ![pend-free-fall](https://github.com/CaioContiG/exercises-robotics-dynamics-control/assets/41450841/2c1dfa00-0a79-47e9-b0cb-0c45189c9750)
 
-## Pendulum PD Control
-Perform swing-up of the pendulum, with damping and l = 0.5 with a PD controller. It uses Euler's method to integrate. The file pendulum_pd.m control the pendulum with a proportional-derivative controller with no restrictions on the maximum torque. It shows the animation and plot the theta and tau over time.
+## Pendulum Control
+Perform swing-up of the pendulum, with damping and l = 0.5 using Euler's method to integrate. The file pendulum_pd.m control the pendulum with a proportional-derivative controller (PD) with no restrictions on the maximum torque. The file pendulum_lqr.m performs the swing-up with torque maximum of 1. With maximum torque limited to 1, the swing-up can be performed by changing the previous PD so it swings from one side to the other and when it cross a theta threshold, LQR controller (inear–quadratic regulator) activates and PD deactivates. Both files shows the animation and plot the theta and torque over time.
+
+![pend-control](https://github.com/CaioContiG/exercises-robotics-dynamics-control/assets/41450841/db94eaf7-00da-4cc9-bf05-4c186929fddf)
+
+
